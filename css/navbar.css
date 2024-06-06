@@ -1,0 +1,30 @@
+:root {
+    --gunmetal: #252C2D;
+    --cool-gray: #767893;
+    --glacous: #547AA5;
+    --celeste: #BCF0F0;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+    h1 {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    span {
+        a {
+        color: var(--cool-gray) !important;
+        border-bottom: 2px solid var(--cool-gray);
+        padding-bottom: 10px;
+        }
+    }
+
+    a {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+    }
+}

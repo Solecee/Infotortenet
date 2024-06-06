@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Brygada+1918:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --gunmetal: #252C2D;
+    --cool-gray: #767893;
+    --glacous: #547AA5;
+    --celeste: #BCF0F0;
+}
+
+body {
+    background-color: var(--gunmetal);
+}
+
+#kezdolap {
+
+    h1 {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    font-size: 10rem;
+    margin-top: 100px;
+    margin-bottom: -50px;
+    }
+
+    span {
+        color: var(--glacous);
+    }
+
+    h2 {
+        color: var(--celeste);
+        font-size: 4rem;
+    }
+
+    .trio {
+        text-align: center;
+        height: 590px;
+    }
+
+    .triocontainer {
+        text-align: center;
+        display: flexbox;
+        -ms-flex-align: center;
+        padding-top: 15px;
+    }
+}
+
+#banner1 {
+    background-color: #1F1F1F;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+
+    h1 {
+        color: white;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 9rem;
+        letter-spacing: 30px;
+        margin: 0;
+    }
+
+    h2 {
+        color: white;
+        border: 2px solid white;
+        padding: 10px;
+        font-size: 3rem;
+    }
+}
+
+#bevezetes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    img {
+        width: 100%;
+    }
+
+    .text-section {
+        background-color: white;
+        display: grid;
+        grid-template-rows: 200px 1fr;  
+        align-items: center;
+        justify-items: center;
+        padding: 50px;
+
+        h1 {
+            font-family: "Brygada 1918", serif;
+            font-size: 6rem;
+            font-weight: lighter;
+        }
+
+        p {
+            font-family: "Open Sans", sans-serif;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        p:first-letter {
+            font-weight: bold;
+            font-family: "Brygada 1918", sans-serif;
+            font-size: 3rem;
+        }
+    }
+}
