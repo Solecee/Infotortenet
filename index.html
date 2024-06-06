@@ -8,19 +8,21 @@
     <title>Az informatika története</title>
 </head>
 <body>
-    <section id="navbar">
-        <h1><a href="">Az abakusz</a></h1>
-        <h1><a href="">A számológép</a></h1>
-        <span><h1><a href="">Kezdőlap</a></h1></span>
-        <h1><a href="">A 20. század</a></h1>
-        <h1><a href="">A modern kor</a></h1>
-    </section>  
-    
-    <section id="kezdolap">
-        <h1>AZ <span>INFORMATIKA</span> TÖRTÉNETE</h1>
-        <div class="triocontainer">
-            <img src="./imgs/trio3.png" alt="" class="trio">
-        </div>
+    <section id="section1">
+        <section id="navbar">
+            <h1><a href="">Az abakusz</a></h1>
+            <h1><a href="">A számológép</a></h1>
+            <span><h1><a href="">Kezdőlap</a></h1></span>
+            <h1><a href="">A 20. század</a></h1>
+            <h1><a href="">A modern kor</a></h1>
+        </section>  
+        
+        <section id="kezdolap">
+            <h1>AZ <span>INFORMATIKA</span> TÖRTÉNETE</h1>
+            <div class="triocontainer">
+                <img src="./imgs/trio3.png" alt="" class="trio">
+            </div>
+        </section>
     </section>
 
     <section id="banner1">
@@ -30,7 +32,7 @@
     </section>
 
     <section id="bevezetes">
-        <div>
+        <div class="bev1">
             <img src="./imgs/images-_1_-transformed.jpeg" alt="">
         </div>
         <div class="text-section">
@@ -39,11 +41,514 @@
         </div>
     </section>
 
+    <section id="abakusz">
+        <div class="text-section2">
+            <h1>Example text</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae turpis vehicula dui dictum rutrum. Quisque fringilla, enim sed suscipit luctus, massa lectus venenatis orci, luctus blandit lorem lectus nec odio. Pellentesque eget ullamcorper dolor, nec finibus lectus. Etiam a tempus augue.</p>
+        </div>
+        <div class="aba">
+            <img src="./imgs/abacus.png" alt="">
+        </div>
+        <div class="banner2">
+            <h1>AZ ABAKUSZ</h1>
+            <h2>01</h2>
+            <h1>AZ ABAKUSZ</h1>
+        </div>
+    </section>
+
+    <section id="szamologep">
+        <div class="banner3">
+            <h1>A SZÁMOLÓGÉP</h1>
+            <h2>02</h2>
+            <h1>A SZÁMOLÓGÉP</h1>
+        </div>
+        <div class="szamolo">
+            <img src="./imgs/szamologep.jpg" alt="">
+        </div>
+        <div class="text-section3">
+            <h1>Example text</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae turpis vehicula dui dictum rutrum. Quisque fringilla, enim sed suscipit luctus, massa lectus venenatis orci, luctus blandit lorem lectus nec odio. Pellentesque eget ullamcorper dolor, nec finibus lectus. Etiam a tempus augue.</p>
+        </div>
+    </section>
+    <section id="analitikus">
+        <div class="banner4">
+            <h1>ITIKUS SZÁMOLÓGÉP</h1>
+            <h2>03</h2>
+            <h1>AZ ANALITIKUS SZÁ</h1>
+        </div>
+        <div class="analitik">
+            <img src="./imgs/analytics.png" alt="">
+        </div>
+        <div class="text-section4">
+            <h1>Example text</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae turpis vehicula dui dictum rutrum. Quisque fringilla, enim sed suscipit luctus, massa lectus venenatis orci, luctus blandit lorem lectus nec odio. Pellentesque eget ullamcorper dolor, nec finibus lectus. Etiam a tempus augue.</p>
+        </div>
+    </section>
+
+    <section id="huszszazad">
+        <div class="banner5">
+            <h1>A 20. SZÁZAD</h1>
+            <h2>04</h2>
+            <h1>A 20. SZÁZAD</h1>
+        </div>
+        <div class="huszszazadtrio">
+            <img src="./imgs/Aiken.png" alt="" class="aiken">
+            <img src="./imgs/neumann.png" alt="" class="neumann">
+            <img src="./imgs/alan.png" alt="" class="alan">
+        </div>
+        <div class="text-section5">
+            <h1>Example text</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae turpis vehicula dui dictum rutrum. Quisque fringilla, enim sed suscipit luctus, massa lectus venenatis orci, luctus blandit lorem lectus nec odio. Pellentesque eget ullamcorper dolor, nec finibus lectus. Etiam a tempus augue.</p>
+        </div>
+    </section>
+
+    <div class="banner6">
+        <h1>A MODERN KOR</h1>
+        <h2>05</h2>
+        <h1>A MODERN KOR</h1>
+    </div>
+    <section id="modernkor">
+        <div class="modern">
+            <img src="./imgs/download.png" alt="">
+        </div>
+        <div class="text-section6">
+            <h1>Example text</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae turpis vehicula dui dictum rutrum. Quisque fringilla, enim sed suscipit luctus, massa lectus venenatis orci, luctus blandit lorem lectus nec odio. Pellentesque eget ullamcorper dolor, nec finibus lectus. Etiam a tempus augue.</p>
+        </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.2/dist/lenis.min.js"></script> 
 
     <script>
-        
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+        console.log(e)
+        })
+
+        function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    </script>
+
+    <script>
+        var tl = gsap.timeline();
+
+        tl.to("#kezdolap", {
+            y: 0,
+            duration: 3,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: "#section1",
+                start: "top top",
+                end: "bottom center",
+                scrub: true,
+                pin: "#pin"
+            }
+        })
+    </script>
+
+    <script>
+        var tl = gsap.timeline();
+
+        tl.to("#banner1", {
+            x: -2000,
+            duration: 0,
+            scrollTrigger: {
+                trigger: "#banner1",
+                start: "top center",
+                end: "top 100px",
+                scrub: true,
+            }
+        })
+        .to("#banner1", {
+            x: 0,
+            duration: 3,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: "#banner1",
+                start: "top center",
+                end: "top 100px",
+                scrub: true,
+            }
+        })
+        tl.to(".bev1", {
+            x: -2000,
+            duration: 0,
+            scrollTrigger: {
+                trigger: "#bevezetes",
+                start: "top center",
+                end: "top 100px",
+                scrub: 1,
+            }
+        })
+        .to(".bev1", {
+            x: -40,
+            duration: 3,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: "#bevezetes",
+                start: "top center",
+                end: "top 100px",
+                scrub: 1,
+            }
+        })
+        .to(".text-section", {
+            y: 1000,
+            duration: 0,
+            scrollTrigger: {
+                trigger: "#bevezetes",
+                start: "top center",
+                end: "top 100px",
+                scrub: 2,
+            }
+        })
+        .to(".text-section", {
+            y: 0,
+            duration: 3,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: "#bevezetes",
+                start: "top center",
+                end: "top 110px",
+                scrub: 2,
+            }
+        })    
+        tl.to("#bevezetes", {
+            pin: "#pin",
+            duration: 1
+
+        })
+    </script>
+
+    <script>
+        var tl = gsap.timeline();
+
+        tl.to(".text-section2", {
+            x: -1000,
+            duration: 0
+        })
+        .to(".aba", {
+            x: -2000,
+            duration: 0
+        })
+        .to(".banner2", {
+            y: 1000,
+            duration: 0
+        })
+
+        tl.to(".text-section2", {
+            x: 0,
+            duration: 3,
+            scrollTrigger: {
+                trigger: "#abakusz",
+                start: "top center",
+                end: "top 100px",
+                scrub: 1
+            }
+        })
+        .to(".aba", {
+            x: 190,
+            duration: 3,
+            scrollTrigger: {
+                trigger: "#abakusz",
+                start: "top center",
+                end: "top 100px",
+                scrub: 2,
+            }
+        })
+        .to(".banner2", {
+            y: 0,
+            duration: 3,
+            scrollTrigger: {
+                trigger: "#abakusz",
+                start: "top center",
+                end: "top 100px",
+                scrub: 3,
+            }
+        })
+
+        tl.to("#abakusz", {
+            pin: "true"
+        })
+    </script>
+
+    <script>
+        var tl = gsap.timeline()
+
+        tl.to(".banner3", {
+            x: 2000,
+            duration: 0,
+            scrollTrigger: {
+                trigger: ".banner3",
+                start: "top center",
+                end: "top 100px",
+                scrub: true,
+            }
+        })
+        .to(".banner3", {
+            x: 0,
+            duration: 3,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: ".banner3",
+                start: "top center",
+                end: "top 100px",
+                scrub: true,
+            }
+        })
+        .to(".text-section3", {
+            y: 1500,
+            duration: 0,
+        })
+        .to(".text-section3", {
+            y: 0,
+            duration: 3,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: "#szamologep",
+                start: "top center",
+                end: "top 100px",
+                scrub: 2
+            }
+        })
+        .to(".szamolo", {
+            y: 1500,
+            duration: 0,
+        })
+        .to(".szamolo", {
+            y: 0,
+            duration: 3,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: "#szamologep",
+                start: "top center",
+                end: "top 100px",
+                scrub: 3
+            }
+        })
+    </script>
+
+    <script>
+        var tl = gsap.timeline()
+
+        tl.to(".banner4", {
+            x: -2000,
+            duration: 0,
+            scrollTrigger: {
+                trigger: ".banner4",
+                start: "top center",
+                end: "top 100px",
+                scrub: true,
+            }
+        })
+        .to(".banner4", {
+            x: 0,
+            duration: 3,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: ".banner4",
+                start: "top center",
+                end: "top 100px",
+                scrub: true,
+            }
+        })
+        .to(".text-section4", {
+            x: 1500,
+            duration: 0,
+        })
+        .to(".text-section4", {
+            x: 0,
+            duration: 3,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: "#analitikus",
+                start: "top center",
+                end: "top 100px",
+                scrub: 2
+            }
+        })
+        .to(".analitik", {
+            y: 1500,
+            duration: 0,
+        })
+        .to(".analitik", {
+            y: 0,
+            duration: 3,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: "#analitikus",
+                start: "top center",
+                end: "top 100px",
+                scrub: 3
+            }
+        })
+    </script>
+
+    <script>
+        var tl = gsap.timeline();
+
+        tl.to(".banner5", {
+            x: -2000,
+            duration: 0,
+            scrollTrigger: {
+                trigger: ".banner5",
+                start: "top center",
+                end: "top 100px",
+                scrub: true,
+            }
+        })
+        .to(".banner5", {
+            x: 0,
+            duration: 3,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: ".banner5",
+                start: "top center",
+                end: "top 100px",
+                scrub: true,
+            }
+        })
+        tl.to(".text-section5", {
+            x: -2000,
+            duration: 0,
+            scrollTrigger: {
+                trigger: "#huszszazad",
+                start: "top center",
+                end: "top 100px",
+                scrub: true,
+            }
+        })
+        .to(".text-section5", {
+            x: 0,
+            duration: 3,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: "#huszszazad",
+                start: "top center",
+                end: "top 100px",
+                scrub: 2,
+            }
+        })
+
+        .to(".aiken", {
+            y: 1500,
+            duration: 0,
+        })
+        .to(".aiken", {
+            y: 0,
+            duration: 3,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: "#huszszazad",
+                start: "top center",
+                end: "top 100px",
+                scrub: 1
+            }
+        })
+        .to(".neumann", {
+            y: 1500,
+            duration: 0,
+        })
+        .to(".neumann", {
+            y: 0,
+            duration: 3,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: "#huszszazad",
+                start: "top center",
+                end: "top 100px",
+                scrub: 3
+            }
+        })
+        .to(".alan", {
+            y: 1500,
+            duration: 0,
+        })
+        .to(".alan", {
+            y: 0,
+            duration: 3,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: "#huszszazad",
+                start: "top center",
+                end: "top 100px",
+                scrub: 2
+            }
+        })
+    </script>
+
+    <script>
+        var tl = gsap.timeline()
+
+        tl.to(".banner6", {
+            x: 2000,
+            duration: 0,
+            scrollTrigger: {
+                trigger: "#modernkor",
+                start: "top center",
+                end: "top 100px",
+                scrub: true,
+            }
+        })
+        .to(".banner6", {
+            x: 0,
+            duration: 3,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: "#modernkor",
+                start: "top center",
+                end: "top 100px",
+                scrub: true,
+            }
+        })
+        tl.to(".modern", {
+            x: -2000,
+            duration: 0,
+            scrollTrigger: {
+                trigger: "#modernkor",
+                start: "top center",
+                end: "top 100px",
+                scrub: true,
+            }
+        })
+        .to(".modern", {
+            x: 0,
+            duration: 3,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: "#modernkor",
+                start: "top center",
+                end: "top 100px",
+                scrub: 1,
+            }
+        })
+        tl.to(".text-section6", {
+            x: 2000,
+            duration: 0,
+            scrollTrigger: {
+                trigger: "#modernkor",
+                start: "top center",
+                end: "top 100px",
+                scrub: true,
+            }
+        })
+        .to(".text-section6", {
+            x: 0,
+            duration: 3,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: "#modernkor",
+                start: "top center",
+                end: "top 100px",
+                scrub: 1,
+            }
+        })
     </script>
 </body>
 </html>

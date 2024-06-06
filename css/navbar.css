@@ -10,6 +10,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
+    overscroll-behavior: none !important;
 
     h1 {
         font-family: 'Open Sans', sans-serif;
